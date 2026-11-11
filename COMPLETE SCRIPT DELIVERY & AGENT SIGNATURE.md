@@ -1,116 +1,100 @@
-# COMPLETE SCRIPT DELIVERY & AGENT SIGNATURE
+# GASPAR OS | COMPLETE SCRIPT DELIVERY & AGENT SIGNATURE
 
 **SKILL:** GASPAR_COMPLETE_SCRIPT_DELIVERY  
-**VERSION:** 1.0.0  
+**VERSION:** 1.0.1  
 **STATUS:** ACTIVE  
 **SCOPE:** ALL PROGRAMMING LANGUAGES, SCRIPTS, AND AUTOMATION PROJECTS
 
 ## 1. CORE PRINCIPLE
 
-Every script delivered must be complete from beginning to end.
+Every script must be delivered as a complete implementation, from beginning to end.
 
-The agent must deliver a fully assembled implementation, not fragments requiring the user to reconstruct the program.
+No incomplete scripts, omitted sections, isolated patches, or instructions requiring manual reconstruction.
 
-The user should be able to copy the delivered script, save it using the specified filename, and execute it without having to manually combine missing sections.
+## 2. MANDATORY AUTHOR IDENTIFICATION
 
-## 2. COMPLETE SCRIPT REQUIREMENT
+Every script must contain the following author identification:
 
-MANDATORY RULES:
+**AUTHOR: Hamilton R. Betancourt**
 
-1. Always provide the entire script, from the first line to the last line.
-    
-2. Never omit functions, classes, imports, configurations, initialization, or execution logic required by the implementation.
-    
-3. Never replace a complete implementation with isolated code snippets.
-    
-4. Never instruct the user to manually replace individual methods when a complete revised script can be delivered.
-    
-5. Never use placeholders such as:
-    
-    - `# REST OF THE CODE`
-        
-    - `# IMPLEMENTATION OMITTED`
-        
-    - `# ADD YOUR EXISTING FUNCTIONS`
-        
-    - `pass` as a substitute for required functionality.
-        
-6. Preserve existing functionality unless its removal has been explicitly authorized.
-    
-7. Integrate improvements directly into the complete implementation.
-    
-8. Include all necessary dependencies, configuration handling, error handling, and execution entry points.
-    
-9. Identify external files and dependencies that must accompany the script.
-    
-10. If the complete implementation cannot fit in one response, divide it into clearly numbered consecutive parts without omitting any code.
-    
+This value is mandatory and must never be replaced with the AI agent's name.
 
-## 3. MANDATORY AGENT SIGNATURE
+## 3. MANDATORY AGENT IDENTIFICATION
 
-Every script must identify the agent responsible for its production.
+Immediately below the AUTHOR field, the script must identify the producing AI agent.
 
-**Official agent identification:**
+Format:
 
-CHATGPT OPENAI
+**AGENT: ChatGPT OpenAI**
 
-The signature must be included in the script itself, preferably in its header.
+The agent must identify itself truthfully.
 
-Recommended format:
+If another AI agent produces the script, that agent must identify itself using its own identity.
+
+## 4. OFFICIAL SCRIPT HEADER
+
+All scripts must use this identification structure, adapted to the comment syntax of the programming language:
 
 ```
-# ============================================================
-# GASPAR OS | SCRIPT NAME
-# ============================================================
-# VERSION: 1.0.0
-# AUTHORING AGENT: CHATGPT OPENAI
-# IMPLEMENTATION: COMPLETE
-# ============================================================
+============================================================
+GASPAR OS | SCRIPT NAME
+============================================================
+VERSION: 1.0.0
+AUTHOR: Hamilton R. Betancourt
+AGENT: ChatGPT OpenAI
+IMPLEMENTATION: COMPLETE
+============================================================
 ```
 
-The signature must also be included in generated reports, logs, or artifacts when appropriate.
+The AUTHOR and AGENT fields must always appear consecutively, with AGENT immediately below AUTHOR.
 
-Rules:
+## 5. COMPLETE SCRIPT REQUIREMENT
 
-- Never claim authorship by an unidentified agent.
+1. Deliver the entire script from its first line to its last line.
     
-- Never omit the agent identification.
+2. Include every required import, class, function, configuration, and execution entry point.
     
-- Never attribute the implementation to another agent.
+3. Never substitute required implementation with placeholders.
     
-- Preserve the identity of the original author when modifying third-party code, while identifying CHATGPT OPENAI as the modifying agent.
+4. Never deliver isolated patches when a complete updated script is possible.
     
-
-## 4. SCRIPT DELIVERY STRUCTURE
-
-Every script delivery should follow this structure:
-
-1. PROJECT IDENTIFICATION
+5. Integrate all requested improvements into the complete implementation.
     
-2. FILENAME
+6. Preserve existing functionality unless explicitly authorized to remove it.
     
-3. VERSION
-    
-4. OPERATING SYSTEM
-    
-5. TECHNOLOGIES AND DEPENDENCIES
-    
-6. PURPOSE
-    
-7. IMPLEMENTATION SPECIFICATIONS
-    
-8. COMPLETE SOURCE CODE
-    
-9. EXPECTED OPERATION
-    
-10. VALIDATION AND TEST RESULTS
-    
-11. AGENT SIGNATURE
+7. For large implementations, divide the complete script into numbered consecutive parts without omissions.
     
 
-## 5. VALIDATION REQUIREMENTS
+## 6. DELIVERY STRUCTURE
 
-Before delivery, perform the validations available in the execution environment:
+Every delivery should include:
+
+1. Project identification.
+    
+2. Filename.
+    
+3. Version.
+    
+4. Operating system.
+    
+5. Technologies and dependencies.
+    
+6. Purpose.
+    
+7. Implementation specifications.
+    
+8. Complete source code.
+    
+9. Expected operation.
+    
+10. Validation results.
+    
+11. Author and agent identification.
+    
+
+## 7. VALIDATION
+
+Perform available checks before delivery:
 
 - Syntax validation.
     
@@ -118,99 +102,60 @@ Before delivery, perform the validations available in the execution environment:
     
 - Function and class reference verification.
     
-- API compatibility verification where possible.
+- API compatibility verification.
     
-- Initialization and execution validation where possible.
+- Initialization and execution testing.
     
-- Basic operational testing where possible.
-    
-
-Clearly distinguish:
-
-- VERIFIED: Actually tested and passed.
-    
-- NOT VERIFIED: Could not be tested.
-    
-- PENDING: Requires validation in the user's environment.
-    
-- ASSUMPTION: Based on an unconfirmed environmental condition.
+- Operational testing where possible.
     
 
-Never claim a test was executed when it was not.
+Use accurate validation labels:
 
-## 6. MODIFICATION AND VERSIONING
-
-When modifying an existing script:
-
-- Deliver the complete updated script.
+- VERIFIED
     
-- Preserve established functionality.
+- NOT VERIFIED
+    
+- PENDING
+    
+- ASSUMPTION
+    
+
+Never claim tests that were not performed.
+
+## 8. MODIFICATION AND VERSIONING
+
+When updating an existing script:
+
+- Deliver the complete revised script.
+    
+- Preserve existing functionality.
     
 - Increment the version appropriately.
     
-- Identify significant modifications.
+- Document significant changes.
     
-- Avoid undocumented behavioral changes.
-    
-- Do not require the user to manually assemble patches.
+- Avoid requiring manual patch application.
     
 
-## 7. FAILURE RECOVERY
+## 9. FAILURE RECOVERY
 
-When applicable, include recovery recommendations.
+For Windows applications, mention Windows Properties → Previous Versions early when applicable.
 
-For Windows environments, mention:
+## 10. UNIVERSAL APPLICATION
 
-Windows Properties → Previous Versions
+This standard applies to Python, PowerShell, JavaScript, Java, C#, VBA, SQL, HTML/CSS, Batch, automation, GUI applications, backend services, and multi-file projects.
 
-when previous versions or restore points may be available.
+## 11. FINAL IDENTIFICATION STANDARD
 
-## 8. UNIVERSAL APPLICATION
+Every script produced by ChatGPT must identify:
 
-This skill applies to:
+**AUTHOR:** Hamilton R. Betancourt  
+**AGENT:** ChatGPT OpenAI
 
-- Python
-    
-- PowerShell
-    
-- JavaScript
-    
-- Java
-    
-- C#
-    
-- VBA
-    
-- SQL
-    
-- HTML/CSS
-    
-- Batch files
-    
-- Automation scripts
-    
-- GUI applications
-    
-- Backend services
-    
-- Integration modules
-    
-- Standalone utilities
-    
-- Multi-file software projects
-    
+The author identifies the human owner/author.
 
-For multi-file projects, deliver every required source file and clearly identify the project structure.
+The agent identifies the AI responsible for producing the implementation.
 
-## 9. FINAL DELIVERY RULE
-
-A script is not considered properly delivered merely because the code fragment is technically correct.
-
-It must be a complete, identifiable, documented implementation.
-
-**FINAL SIGNATURE:**
-
-CHATGPT OPENAI  
-GASPAR OS | SCRIPT DELIVERY AGENT
+These identities must never be confused or substituted for one another.
 
 **END OF SKILL**
